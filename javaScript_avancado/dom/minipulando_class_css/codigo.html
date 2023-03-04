@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .highlight {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Titulo da página</h1>
+    <button id="change-color">Alterar Cor</button>
+
+    <script>
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
+
+      const titleEl = document.querySelector("#title");
+
+      const buttonEl = document.querySelector("#change-color");
+      buttonEl.addEventListener("click", () => {
+        // if (titleEl.classList.contains("highlight")) {
+        //   titleEl.classList.remove("highlight");
+        // } else {
+        //   titleEl.classList.add("highlight");
+        // }
+
+        titleEl.classList.toggle("highlight");
+      });
+    </script>
+  </body>
+</html>

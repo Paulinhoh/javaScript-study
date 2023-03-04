@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="foto.png" width="100" />
+    <h1 id="person-name" class="text">Paulo Henrique</h1>
+    <h2>Programador JavaScript</h2>
+    <p class="text">
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/Paulinhoh" target="_blank">Github</a>. ou
+      <a href="#" target="_blank">Portfólio</a>
+    </p>
+    <script>
+      // Alterando um objeto DOM
+
+      const titleEl = document.querySelector("#person-name");
+      console.log("titleEl value:", titleEl.innerHTML);
+
+      titleEl.innerHTML = "Paulinho";
+      titleEl.style.color = "red";
+    </script>
+  </body>
+</html>

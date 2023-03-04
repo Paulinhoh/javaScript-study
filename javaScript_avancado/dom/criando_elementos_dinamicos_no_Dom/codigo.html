@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="foto.png" width="100" />
+    <h1 id="person-name" class="text">Paulo Henrique</h1>
+    <h2>Programador JavaScript</h2>
+    <p class="text">
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/Paulinhoh" target="_blank">Github</a>. ou
+      <a href="#" target="_blank">Portfólio</a>
+    </p>
+    <!-- <h2>Projetos</h2>
+    <ul>
+      <li>Projeto 1</li>
+      <li>Projeto 2</li>
+      <li>Projeto 3</li>
+    </ul> -->
+    <script>
+      // Criando elementos dinamicos no DOM
+      // Ref: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement
+
+      const subTitle = document.createElement("h2");
+      subTitle.innerHTML = "Projetos";
+
+      const pjListEl = document.createElement("ul");
+
+      const pjListItem1 = document.createElement("li");
+      pjListItem1.innerHTML = "TODO MVC";
+      const pjListItem2 = document.createElement("li");
+      pjListItem2.innerHTML = "Github API";
+      const pjListItem3 = document.createElement("li");
+      pjListItem3.innerHTML = "eComerce";
+
+      pjListEl.append(pjListItem1);
+      pjListEl.append(pjListItem2);
+      pjListEl.append(pjListItem3);
+
+      document.body.append(subTitle);
+      document.body.append(pjListEl);
+
+      for (let i = 0; i < 3; i++) {
+        pjListItem3.innerHTML = `eComerce ${i}`;
+      }
+    </script>
+  </body>
+</html>

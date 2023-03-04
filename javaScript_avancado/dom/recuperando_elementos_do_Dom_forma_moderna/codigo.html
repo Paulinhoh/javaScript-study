@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="foto.png" width="100" />
+    <h1 id="person-name" class="text">Paulo Henrique</h1>
+    <h2>Programador JavaScript</h2>
+    <p class="text">
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <a href="https://github.com/Paulinhoh" target="_blank">Github</a>. ou
+      <a href="#" target="_blank">Portfólio</a>
+    </p>
+    <script>
+      // Acessando os nós do DOM
+
+      // forma "antiga"...
+      document.getElementById("")
+      document.getElementByTagName("")
+      document.getElementByClassName("")
+
+      // Forma "moderna"...
+      document.querySelector("selector")
+      document.querySelectorAll("selector")
+      element.querySelector("selector")
+      element.querySelectorAll("selector")
+
+      // CSS Selector
+      // Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors
+
+      // Universal: *
+      // Id: #el-id
+      // class: .el-class
+      // Atributes: [attr=value]
+      // Grupos (virgula): el,el
+      // Decendentes (espaço): el el
+      // Childs (>): el > el
+
+      console.log("*", document.querySelectorAll("*"));
+      console.log("id", document.querySelector("#person-name"));
+      console.log("tag", document.querySelectorAll("p"));
+      console.log("class", document.querySelectorAll(".text"));
+      console.log("attr", document.querySelectorAll("a[href]"));
+      console.log(
+        "attr",
+        document.querySelectorAll("a[href= 'https://github.com/Paulinhoh'")
+      );
+
+      // Interando toda a arvore DOM...
+      for (const el of document.querySelectorAll("*")) {
+        console.log("el", el);
+      }
+    </script>
+  </body>
+</html>
